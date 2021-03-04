@@ -1,0 +1,27 @@
+<svg width="1440" height="1028" viewBox="0 0 1440 1028" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="stone 2">
+<g id="stone 1">
+<g id="separate 1 1">
+<g id="stone">
+<g id="stone-outline" filter="url(#filter0_i)">
+<path id="Vector_3" d="M720 764C853.346 764 970 656.941 970 514C970 371.059 853.346 264 720 264C586.654 264 470 371.059 470 514C470 656.941 586.654 764 720 764Z" stroke="#DD0B0B" stroke-width="25"/>
+</g>
+<path id="stone-container" d="M717.999 755C852.206 755 961 646.205 961 511.999C961 377.795 852.206 269 717.999 269C583.794 269 475 377.795 475 511.999C475 646.205 583.794 755 717.999 755Z" fill="white"/>
+<path id="stone-icon" d="M823.24 449.232C820.069 404.428 775.167 409.004 775.167 409.004C756.214 371.563 726.604 398.68 726.604 398.68C703.856 361.991 675.342 395.991 675.342 395.991C626.163 390.05 628.069 435.097 628.069 435.097C626.915 449.419 635 493.718 635 493.718C627.705 468.185 611.884 489.383 611.884 489.383C592.427 523.016 607.069 541.428 607.069 541.428C633.396 575.995 689.488 617.486 689.488 617.486C709.803 630.525 701.209 642.151 701.209 642.151L824.069 619.408L826.892 593.293C845.569 530.009 823.24 449.232 823.24 449.232Z" fill="#3B4262"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_i" x="457.5" y="247.5" width="525" height="529" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-10"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+</defs>
+</svg>

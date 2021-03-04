@@ -1,0 +1,39 @@
+.back {
+  width: 100vh;
+  height: 100vw;
+  position: relative;
+}
+.main-back {
+  /* background-color:black; */
+  width: 70%;
+  height: 70%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+@media (max-width: 500px) {
+  .main-back {
+    top:60%;
+    width: 100%;
+    height: 100%;
+  }
+}
+#animationClass {
+  animation: shankhAnimation 1s ease;
+  /* background-color: balck; */
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes shankhAnimation {
+  0% {
+    transform: scale(1) rotateZ(0deg);
+  }
+  50%{
+    transform: scale(0.8) rotateZ(360deg)
+  }
+  100% {
+    transform: scale(1.2) rotateZ(720deg);
+  }
+}

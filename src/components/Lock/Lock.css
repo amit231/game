@@ -1,0 +1,427 @@
+.grid {
+  margin-top: 5%;
+  display: grid;
+  grid-template-rows: 20px 1fr 1fr 1fr;
+  grid-template-columns: 44% 8% 44%;
+}
+.youText {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  letter-spacing: 1.8px;
+  font-weight: 900;
+}
+
+.hide {
+  transform: scaleX(0);
+}
+.opponentText {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  letter-spacing: 1.8px;
+  font-weight: 900;
+}
+.selectedDiv {
+  text-align: center;
+  /* background-color: green; */
+  grid-row: 2/-1;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.resultDiv {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  grid-row: 3/5;
+  grid-column: 2/3;
+  /* opacity: 1; */
+  width: 120%;
+  text-align: center;
+  height: 70px;
+  transition: 1s;
+  transition-property: transform;
+
+  transform: scaleX(1.2);
+}
+.animateShuffle {
+  animation: moveShuffle 1s ease;
+  transform: translateX(5%);
+}
+/* aura b de dena de dunga chota mota kaam hai mere liye 
+lets see*/
+.animateSelected {
+  animation: moveSelected 1s ease;
+  transform: translateX(-5%);
+}
+@keyframes moveShuffle {
+  0% {
+    transform: translateX(0) ;
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+@keyframes moveSelected {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3%);
+  }
+}
+.playAgainBtn {
+  height: 100%;
+  color: hsl(237, 49%, 15%);
+  font-weight: 200;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 6px;
+  letter-spacing: 1.8px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+.outcome {
+  color: white;
+  font-style: bold;
+  font-weight: 1000;
+  transform: scaleY(2);
+  padding-bottom: 4px;
+  letter-spacing: 7px;
+}
+.shuffleDiv {
+  text-align: center;
+  grid-row: 2/-1;
+  grid-column: 3/4;
+  position: relative;
+}
+.svgClass {
+  width: 85%;
+}
+
+@media (max-width: 1050px) {
+  .grid {
+    margin-top: 30%;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 50% 50%;
+    position: relative;
+  }
+  .selectedDiv {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+  .shuffleDiv {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .resultDiv {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    opacity: 1;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .opponentText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+  .youText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+}
+/* .shiftImg{
+  transform:translate(60%,20%)
+} */
+
+@media (max-width: 800px) {
+  .grid {
+    margin-top: 30%;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 50% 50%;
+    position: relative;
+  }
+  .selectedDiv {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+  .shuffleDiv {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .resultDiv {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    opacity: 1;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .opponentText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+  .youText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .grid {
+    margin-top: 120px;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 50% 50%;
+    position: relative;
+  }
+  .selectedDiv {
+    text-align: center;
+    /* background-color: green; */
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+  .shuffleDiv {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .resultDiv {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    opacity: 1;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .opponentText {
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+  .youText {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .svgClass {
+    width: 100%;
+  }
+
+  .grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 50% 50%;
+    position: relative;
+  }
+  .selectedDiv {
+    text-align: center;
+    /* background-color: green; */
+    top: 50%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+  .shuffleDiv {
+    top: 50%;
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .resultDiv {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    opacity: 1;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .opponentText {
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+  .youText {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 50% 50%;
+    position: relative;
+  }
+  .selectedDiv {
+    text-align: center;
+    /* background-color: green; */
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+  .shuffleDiv {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .resultDiv {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    opacity: 1;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .opponentText {
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+  .youText {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0;
+    font-weight: 0;
+    white-space: nowrap;
+    padding-left: 6px;
+    width: 100%;
+  }
+}

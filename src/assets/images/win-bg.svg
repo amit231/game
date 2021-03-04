@@ -1,0 +1,9 @@
+<svg width="2017" height="2038" viewBox="0 0 2017 2038" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1">
+<g id="win-bg">
+<path id="bottom" d="M1879 981C1879 1478.06 1476.06 1881 979 1881C481.944 1881 79 1478.06 79 981C79 483.944 481.944 81 979 81C1476.06 81 1879 483.944 1879 981Z" fill="#BCB5B5" fill-opacity="0.1"/>
+<path id="mid" d="M1675 981C1675 1367.6 1361.6 1681 975 1681C588.401 1681 275 1367.6 275 981C275 594.401 588.401 281 975 281C1361.6 281 1675 594.401 1675 981Z" fill="#BCB5B5" fill-opacity="0.08"/>
+<circle id="top" cx="975" cy="981" r="500" fill="#C4C4C4" fill-opacity="0.08"/>
+</g>
+</g>
+</svg>

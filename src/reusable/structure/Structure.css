@@ -1,0 +1,132 @@
+.structureContainer {
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.rulesBtn {
+  position: absolute;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  color: white;
+  letter-spacing: 3px;
+  padding-left: 20px;
+  background-color: inherit;
+  border: 1.5px solid white;
+  border-radius: 6px;
+  outline: none;
+  bottom: 6%;
+  right: 6%;
+  z-index: 1;
+  cursor:pointer;
+
+}
+.scoreContainer {
+  border: 2px solid hsl(217, 16%, 45%);
+  width: 50%;
+  position: relative;
+  top: 5%;
+  left: 25%;
+  border-radius: 10px;
+  display: grid;
+  padding: 1% 2%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.5fr 0.6fr;
+}
+.logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.shift-logo {
+  animation: shiftLogo 1s infinite ease-in-out;
+  transform-origin: center;
+}
+
+.logout {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  color: white;
+  letter-spacing: 3px;
+  background-color: inherit;
+  border: 1.5px solid white;
+  border-radius: 6px;
+  outline: none;
+  bottom: 6%;
+  left: 6%;
+  z-index: 1;
+  cursor:pointer;
+}
+@keyframes shiftLogo {
+  0% {
+    transform: translateX(1%) ;
+  }
+  50% {
+    transform: translateX(45vw) ;
+  }
+  100% {
+    transform: translateX(1%) ;
+  }
+}
+
+.innerScoreContainer {
+  border-radius: 10px;
+  background: whitesmoke;
+  grid-row: 1/2;
+  grid-column: 3/4;
+  position: relative;
+  display: flex;
+}
+.score-text {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  /* padding-top: 15px; */
+  color: hsl(229, 64%, 46%);
+}
+.score {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: hsl(229, 25%, 31%);
+  font-size: 80px;
+}
+@media (max-width: 1024px) {
+  .scoreContainer {
+    width: 80%;
+    left: 8%;
+    /* ohh */
+  }
+  .innerScoreContainer {
+    width: 150%;
+    transform: translateX(-45%);
+  }
+  .rulesBtn {
+    
+    left: 50%;
+    transform:translateX(-50%)
+  }
+}
+@media (max-width: 450px) {
+  .scoreContainer {
+    width: 80%;
+    left: 8%;
+  }
+  .innerScoreContainer {
+    width: 200%;
+    transform: translateX(-50%);
+  }
+  .rulesBtn {
+    right: 40%;
+  }
+  .logout {
+    bottom: 1%;
+    height: 30px;
+    left:50%;
+    transform:translateX(-50%)
+  }
+}
